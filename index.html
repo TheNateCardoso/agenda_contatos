@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Agenda_Tabela/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="/Agenda_Tabela/2885526.png" alt="Ícone de agenda">
+            <h1>Agenda de Contatos</h1>
+        </header>
+        <form id="form-contato">
+            <div class="campo-input">
+                <input type="text" id="contato" required placeholder="Nome do contato..."/>
+                <span class="mensagem-erro" id="erro-nome"></span>
+            </div>
+            <div class="campo-input">
+                <input type="tel" id="telefone" required placeholder="Telefone do contato..."/>
+                <span class="mensagem-erro" id="erro-telefone"></span>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Contato</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="/Agenda_Tabela/main.js"></script>
+</body>
+</html>
